@@ -1,4 +1,4 @@
-ENGI E1006 - Intro to Computing for Engineers & Applied Scientists
+**ENGI E1006 - Intro to Computing for Engineers & Applied Scientists**
 
 Group Exercise Set 4
 
