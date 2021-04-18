@@ -11,11 +11,16 @@ problem2.py
 
 **Problem 1 (60 pts) - Counting n-grams**
 An n-gram is a contiguous sequence of n words in a given sequence of text. An n-gram of size 1 is referred to as a unigram, of size 2 is a bigram, and size 3 is a trigram. For example, for the sentence "Columbia University is great" the unigrams would be
-   [('columbia',), ('university',), ('is',), ('great',)], 
+
+    [('columbia',), ('university',), ('is',), ('great',)], 
+
 the bigrams would be 
-   [('columbia','university'), ('university','is'), ('is','great')], 
+
+    [('columbia','university'), ('university','is'), ('is','great')], 
+
 and the trigrams would be 
-   [('columbia','university','is'), ('university','is','great')]
+
+    [('columbia','university','is'), ('university','is','great')]
 
 N-grams are frequently used in Natural Language Processing, in applications such as language modeling to identify a text's genre or author, or in machine translation to judge the quality of the translation output. 
 
@@ -62,21 +67,21 @@ The value of an Ace card depends on the context in which the card is dealt. If t
 
 Here is example output for a game of Black Jack. Your program does not have to mimic this output precisely. 
 
-   You drew ♥9.
-   sum: 9
-   Do you want another card? (y/n)y
-   You drew ♠Q.
-   sum: 19
-   Do you want another card? (y/n)n
-   My turn.
-   I drew ♦4
-   My sum: 4
-   I drew ♦6
-   My sum: 10
-   I drew ♦3
-   My sum: 13
-   I drew ♠3
-   My sum: 16
-   I drew ♦8
-   My sum: 24
-   You win.
+    You drew ♥9.
+    sum: 9
+    Do you want another card? (y/n)y
+    You drew ♠Q.
+    sum: 19
+    Do you want another card? (y/n)n
+    My turn.
+    I drew ♦4
+    My sum: 4
+    I drew ♦6
+    My sum: 10
+    I drew ♦3
+    My sum: 13
+    I drew ♠3
+    My sum: 16
+    I drew ♦8
+    My sum: 24
+    You win.
