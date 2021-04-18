@@ -57,13 +57,18 @@ If the player has neither won or lost at this point, it is the dealer's turn to 
 
 The value of an Ace card depends on the context in which the card is dealt. If the player is dealt an Ace, the card's value is 11 unless this would result in a total score of more than 21. In that case, the value of the Ace is 1. The same rule applies if it is the dealer's turn. 
 
- (a) Write the class Card, which represents a single playing card. The class should define two attributes, suit and rank. Both should be strings and they should be initialized with the parameters passed to the __init__(self, suit, value) method, so you can use the following line to create a new card: 
- some_card = Card('♠','A')
- another_card = Card('♥','10')
- Write a suitable __str__(self) method for your class that returns a single string representing the card's suit and rank.
- (b) Write the value(self,total) method of the Card class, that returns the game value of the card as an int, given the current score. If the card is a number card, that number should be the value. If it is a face card, the value should be 10. If it is an Ace, the value depends on the current score of either the player or the dealer, which is passed to the method as a parameter (1 or 11, see above).
- (c) Outside of your Card class, write the function make_deck(), that returns a list of all possible 52 cards. Instead of listing each card in your code explicitly, use nested for loops to create the cards. Before returning the list, use the random.shuffle(some_list) method, which shuffles the element of some_list in place (i.e. it modifies some_list, rather than returning a new list).
- (d) Write a main() function that plays a single game of Black Jack according to the rules specified above. First, get a new list of cards by calling the make_deck() method. To deal a card, remove the first element from the list. Keep track of the player's score. Call the card's value method to determine the value of the card. After each card, evaluate if the player has won or lost and otherwise ask her if she wants another card. If the player decides to "stay", perform the dealer's turn as described above (continue to use the same deck). 
+(a) Write the class Card, which represents a single playing card. The class should define two attributes, suit and rank. Both should be strings and they should be initialized with the parameters passed to the __init__(self, suit, value) method, so you can use the following line to create a new card: 
+
+    some_card = Card('♠','A')
+    another_card = Card('♥','10')
+
+Write a suitable __str__(self) method for your class that returns a single string representing the card's suit and rank.
+
+(b) Write the value(self,total) method of the Card class, that returns the game value of the card as an int, given the current score. If the card is a number card, that number should be the value. If it is a face card, the value should be 10. If it is an Ace, the value depends on the current score of either the player or the dealer, which is passed to the method as a parameter (1 or 11, see above).
+
+(c) Outside of your Card class, write the function make_deck(), that returns a list of all possible 52 cards. Instead of listing each card in your code explicitly, use nested for loops to create the cards. Before returning the list, use the random.shuffle(some_list) method, which shuffles the element of some_list in place (i.e. it modifies some_list, rather than returning a new list).
+
+(d) Write a main() function that plays a single game of Black Jack according to the rules specified above. First, get a new list of cards by calling the make_deck() method. To deal a card, remove the first element from the list. Keep track of the player's score. Call the card's value method to determine the value of the card. After each card, evaluate if the player has won or lost and otherwise ask her if she wants another card. If the player decides to "stay", perform the dealer's turn as described above (continue to use the same deck). 
 
 Here is example output for a game of Black Jack. Your program does not have to mimic this output precisely. 
 
