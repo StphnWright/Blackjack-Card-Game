@@ -26,9 +26,10 @@ N-grams are frequently used in Natural Language Processing, in applications such
 
 Download the file problem1.py and complete the functions as described below. 
 
-(a) Fill in the function count_ngrams(file_name, n), which should read an input file (file name provided as a string) and returns a dictionary of n-gram counts. This result dictionary should map each n-grams to the number of times that n-gram appears in the input text. Each n-gram key is a tuple (as in the example above) and the count is an int.
-Preprocess the file by converting everything to lower-case and removing punctuation. Important: n-grams can cross lines in the input file. Your program should remove line breaks and treat the text as one long list of words. 
+(a) Fill in the function count_ngrams(file_name, n), which should read an input file (file name provided as a string) and returns a dictionary of n-gram counts. This result dictionary should map each n-grams to the number of times that n-gram appears in the input text. Each n-gram key is a tuple (as in the example above) and the count is an int. Preprocess the file by converting everything to lower-case and removing punctuation. **Important:** n-grams can cross lines in the input file. Your program should remove line breaks and treat the text as one long list of words. 
+
 (b) Fill in the function single_occurences(ngram_count_dict), which takes a dictionary as its only parameter (in the format produced by count_ngrams) and returns a list of all n-grams that occur only once.  That is, this function should return a list of all n-grams with a count of 1. 
+
 (c) Fill in the function most_frequent(ngram_count_dict, num) that takes in two parameters:
 ngram_count_dict is a dictionary of ngram counts in the format returned by count_ngrams. num denotes the number of n-grams to return. This function returns a list of the num n-grams that appear most frequently in the input file.  For example if num=10, the method should return the 10 most frequent n-grams in a list. 
 
