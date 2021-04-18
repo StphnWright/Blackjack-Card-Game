@@ -6,8 +6,6 @@ result dictionary maps n-grams to their frequency. The single_occurence function
 dictionary and returns a list of n-grams with only one occurrence, while the most_frequent
 function takes in two parameters and returns a list of num n-grams with the highest occurrence
 in the file. The main function tests the functionality of the code under various arguments.
-
-@author: Stephen Wright (svw2112)
 """
 
 from collections import defaultdict
