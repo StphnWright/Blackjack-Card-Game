@@ -5,8 +5,6 @@ cards totaling the most points without going over 21.
 class Card represents a playing card by defining the attributes suit and rank.
 make_deck function returns a shuffled list of all possible 52 cards in a deck.
 main function plays a game of Blackjack according to the basic rules provided. 
-
-@author: Stephen Wright (svw2112)
 """
 
 import random
